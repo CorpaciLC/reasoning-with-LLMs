@@ -34,8 +34,9 @@
 
 # Dates of interest:
 - 15 November: ELLIS deadline  (reference letter)
-- 9 January 2025: ICML submission opens
-- 8 January 2025: Oxford Maths DPhil - application deadline (cv/reference letters)
-- 17 January 2025: Seminar in Data Science (presentation)
-- 31 January 2025: ICML deadline (paper)
+- ...RQ2/3...
+- 8 January 2025: Oxford Maths DPhil - application deadline
+- 9 January 2025: ICML submission starts
+- 17 January 2025: Seminar in Data Science - presentation
+- 31 January 2025: ICML submission deadline
 - February+: Msc. thesis submission
