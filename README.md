@@ -35,7 +35,7 @@
 
 ### December
 - 3rd: ML exam
-- 6th: todo: send update to Monika with experimental setup (MVP on TU cluster): expand data on NNs
+- 6th: todo: send update to Monika with experimental setup (MVP on TU cluster): expand data on NNs + initial pipeline for llm prompting with 1-parameter variation
 - 10th+: LLM experiments / explore edge cases / failure modes 
 - 15th: bash scripts for runs on cluster / start experiments
 - 20th: initial draft of paper +  intermediate results 
