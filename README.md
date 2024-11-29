@@ -1,14 +1,21 @@
 ## 1. Compare neural learning models
 1. classical neural network models
-2. biologically inspired neural networks
-   update: RNNs done
+   work in progress: RNNs/LSTMs
    todo: CNNs
-3. datasets (synthetic/real-world: MNIST digits, time-series)
-    update: synthetic + noise done
-    todo: check Daniela & Mathias' paper with datasets in ANNEX
-6. train models (save training time, model complexity, accuracy, and loss)
-7. evaluate: loss, accuracy, runtime
-8. compare metrics, runtimes, and model complexities
+3. biologically inspired neural networks
+   work in progress: LNNs, NPCs
+   
+5. datasets (synthetic/real-world: MNIST digits, time-series)
+    time-series:
+      synthetic (sinusoid) + noise
+      real-world: har dataset
+   images:
+      todo: MNIST digits
+   
+7. train models (save training time, model complexity, accuracy, and loss)
+     save: activation function, weight matrices, equations, etc.
+9. evaluate: loss, accuracy, runtime
+10. compare metrics, runtimes, and model complexities
 
 ## 2. LLM interpretability/explainability/reasoning of the neural learning models
 1. LLM models (e.g. llamas)
@@ -20,11 +27,29 @@
 1. Text description
 2. ...
 
+# Experimental ideas:
+...
 
 # Dates of interest:
 - ...
-- 8 January 2025: Oxford Maths DPhil - application deadline
-- 9 January 2025: ICML submission starts
-- 17 January 2025: Seminar in Data Science - presentation
-- 31 January 2025: ICML submission deadline
-- February+: Msc. thesis submission
+
+### December
+- 3rd: ML exam
+- 6th: todo: send update to Monika with experimental setup (MVP on TU cluster): expand data on NNs
+- 10th+: LLM experiments / explore edge cases / failure modes 
+- 15th: bash scripts for runs on cluster / start experiments
+- 20th: initial draft of paper +  intermediate results 
+- ...
+- 27th: LLM explorations
+
+### January 2025
+- 3th: Intermediary draft
+- **8th**: Oxford Maths DPhil - application **deadline**
+- 9th: ICML submission starts
+- 17th: Seminar in Data Science - presentation
+- 20th: intial final draft
+- **24th**: title + abstract + authors **deadline**
+- **31th**: ICML submission **deadline**
+
+### February+: 
+Msc. thesis submission
