@@ -129,6 +129,29 @@ def train_and_evaluate_model_with_validation(model, train_x, train_y, val_x, val
 
     return history, runtime
 
+def extract_nn_info(model, model_name):
+    print(f"\nModel: {model_name}")
+
+    # Structure
+    print("\n**Structure**")
+    print("Number of Layers:", len(model.layers))
+    for layer in model.layers:
+        print(f"Layer Name: {layer.name}, Type: {type(layer).__name__}, Output Shape: {layer.output_shape}")
+
+    # Weights and Connections
+    print("\nWeights and Connections:")
+    for layer in model.layers:
+        weights = layer.get_weights()
+        if weights:
+            print(f"Layer {layer.name} Weights:")
+            for i, w in enumerate(weights):
+                print(f"  Weight {i}: Shape {w.shape}")
+
+    # Function
+    print("\n**Function**")
+    activation_functions = [layer.activation.__name__ for layer in model.layers if hasattr(layer, 'activation')]
+    print("Activation Functions:", activation_functions)
+
 
 def run_pipeline_with_data_splits(num_samples, sequence_lengths, wiring_options, mid_layer_options, model_types, learning_rates, batch_sizes, noise_levels, epochs=100):
     histories = []
@@ -151,6 +174,7 @@ def run_pipeline_with_data_splits(num_samples, sequence_lengths, wiring_options,
                             for wiring_name, wiring in wiring_options.items():
                                 model = model_creator(wiring)
                                 model.compile(optimizer=keras.optimizers.Adam(learning_rate), loss='mean_squared_error')
+                                extract_nn_info(model, model_name)
                                 history, runtime = train_and_evaluate_model_with_validation(model, X_train, y_train, X_val, y_val, epochs=epochs, batch_size=batch_size)
                                 histories.append(history)
                                 label = f'{model_name}_{wiring_name}_lr{learning_rate}_batch{batch_size}_noise{noise_level}_length{length}'
