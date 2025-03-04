@@ -42,7 +42,7 @@
 - ...
 - 27th: LLM explorations
 
-### January 2025
+### January 2025 - Nope
 - 3th: Intermediary draft
 - **8th**: Oxford Maths DPhil - application **deadline**
 - 9th: ICML submission starts
@@ -51,5 +51,18 @@
 - **24th**: title + abstract + authors **deadline**
 - **31th**: ICML submission **deadline**
 
-### February+: 
+### February - Nope
 Msc. thesis submission
+
+### March
+- re-transit into thesis & cover intially discussed experiments
+- 1+ overleaf page per day + 1+ commit per day
+
+### April
+- 60pages thesis + draft
+
+### May
+- 15th May NeurIPS paper deadline
+
+### June
+- Graduation
